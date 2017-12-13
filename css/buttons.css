@@ -1,0 +1,83 @@
+element {
+  --main-bg-color: brown;
+}
+
+$primary: #F07444;
+$secondary: #f3f3f3;
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 2px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.sm {
+  width: 10%;
+}
+
+.md {
+  width: 20%;
+}
+
+.lg {
+  width: 40%;
+}
+
+.ghost {
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+
+  transition: .2s ease;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+
+    transition: .2s ease;
+  }
+}
+
+.secondary {
+  background-color: $secondary;
+  color: $primary;
+
+  transition: .2s ease;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+    //color: white;
+
+    transition: .2s ease;
+  }
+}
+
+.disabled {
+  color: darken($secondary, 20%);
+  background-color: darken($secondary, 5%);
+
+  &:hover {
+    cursor: initial;
+  }
+}
+
+@media (max-width: 480px){
+  .sm {
+    width: 40%
+  }
+
+  .md {
+    width: 50%
+  }
+
+  .lg {
+    width: 90%;
+  }
+}

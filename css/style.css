@@ -92,14 +92,29 @@ h1 {
   display: inline-block;
   margin: 0 1%; }
 
+.relative-slider-container{
+  position: relative;
+  width: 100%auto;
+  height: auto; 
+}
+
+.abs-slider-container{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: white;
+  z-index: 1;
+}
+
 .o-sliderContainer {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   min-height: 200px;
   background: #fff;
-  float: left;
-  margin: 30px 0;
+  float: inherit;
   height: auto; }
   .o-sliderContainer.hasShadow {
     box-shadow: 0 39px 22px -29px rgba(0, 0, 0, 0.2); }
