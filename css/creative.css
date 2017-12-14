@@ -56,7 +56,10 @@ section {
   padding: 8rem 0; }
 
 .section-heading {
-  margin-top: 0; }
+  margin-top: 0;
+  color:#0F1011;
+  font-family:"Open Sans";
+}
 
 ::-moz-selection {
   color: #fff;
@@ -314,7 +317,7 @@ header.masthead {
 .overlaying-text p{
   color: white;
   font-size:20px;
-  font-family:"Roboto";
+  font-family:"";
 }
 
 .low1{
@@ -822,4 +825,7 @@ header.masthead {
 pm-0{
   margin: 0;
   padding: 0;
+}
+
+.stripe-hw{
 }
