@@ -94,26 +94,34 @@ h1 {
 
 .relative-slider-container{
   position: relative;
-  width: 100%auto;
-  height: auto; 
+  width: 100%;
+  height: 720px;
+  background-color: #fff;
 }
 
 .abs-slider-container{
-  position: absolute;
+  position:absolute;
   width: 100%;
   height: auto;
-  margin: 0;
-  background-color: white;
-  z-index: 1;
+  margin: auto;
+  top: -10%;
+  border-width: 5px;
+  border-color: #f00;
+
 }
 
 .o-sliderContainer {
+  -moz-box-shadow: 0 0 10px 7px rgba(15,16, 17, 0.2) ;
+  -webkit-box-shadow: 0 0 10px 7px rgba(15,16,17, 0.2);
+  box-shadow: 0 0 10px 7px rgba(15,16,17, 0.2);
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
-  width: 80%;
+  width: 76%;
+  background-color: #fff;
   margin: auto;
   min-height: 200px;
-  background: #fff;
+  background: transparent;
   float: inherit;
   height: auto; }
   .o-sliderContainer.hasShadow {

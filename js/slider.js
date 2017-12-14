@@ -20,7 +20,7 @@
             slider_Ease : 'cubic-bezier(0.5, 0, 0.5, 1)',  // see http://cubic-bezier.com/
             slider_Breakpoints : { // Kind of media queries ( can add more if you know how to do it :D and if you need )
                 default : {
-                    height : 500 //  height on desktop
+                    height : 700 //  height on desktop
                 },
                 tablet : {
                     height : 400, // height on tablet
@@ -312,9 +312,9 @@
                 } else {
                     $(pbSlider.slider_Wrap + ' .o-slider-next').trigger('click');
                 }
-            }, 3000);
+            }, 7000);
         }
-        //pbSlider.auto();
+        pbSlider.auto();
         pbSlider.pbInit(this);
     };
 
